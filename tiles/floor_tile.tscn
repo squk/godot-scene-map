@@ -3,9 +3,9 @@
 [sub_resource type="QuadMesh" id=1]
 size = Vector2( 2, 2 )
 
-[node name="FloorTile" type="Spatial"]
+[node name="FloorTile" type="Node3D"]
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, -1, 0 )
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, -1, 0 )
 mesh = SubResource( 1 )
 material/0 = null
