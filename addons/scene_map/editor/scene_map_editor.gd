@@ -116,11 +116,11 @@ func handle_spatial_input(camera: Camera3D, event: InputEvent) -> bool:
 
 	var click_event := event as InputEventMouseButton
 	if click_event:
-		if click_event.button_index == MOUSE_BUTTON_WHEEL_UP && click_event.shift:
+		if click_event.button_index == MOUSE_BUTTON_WHEEL_UP && Input.is_key_pressed(KEY_SHIFT):
 			if click_event.pressed:
 				floor_control.value += click_event.factor
 			return true
-		if click_event.button_index == MOUSE_BUTTON_WHEEL_DOWN && click_event.shift:
+		if click_event.button_index == MOUSE_BUTTON_WHEEL_DOWN && Input.is_key_pressed(KEY_SHIFT):
 			if click_event.pressed:
 				floor_control.value -= click_event.factor
 			return true
